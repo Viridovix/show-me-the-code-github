@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/Viridovix/show-me-the-code-github.png?label=ready&title=Ready)](https://waffle.io/Viridovix/show-me-the-code-github)
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)]
 (https://gitter.im/Viridovix/show-me-the-code-github?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
