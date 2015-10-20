@@ -1,0 +1,20 @@
+apply plugin: 'groovy'
+apply plugin: 'checkstyle'
+
+checkstyle {
+    toolVersion = '6.11.2'
+}
+
+checkstyleMain {
+    source = fileTree('.') {
+        excludes = ['.*/**', 'gradle*', 'build/**', '*.iml', '*.log', '**/*.jar']
+    }
+}
+
+repositories {
+    jcenter()
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.8'
+}
