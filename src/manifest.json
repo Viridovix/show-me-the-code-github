@@ -1,0 +1,13 @@
+{
+    "name": "Show me the code GitHub",
+    "description": "Do not limit me to 120 characters per line and do not display tabs as 8 spaces!",
+    "homepage_url": "https://github.com/Viridovix/show-me-the-code-github",
+    "version": "1.0",
+    "permissions": [
+        "activeTab"
+    ],
+    "browser_action": {
+        "default_popup": "show-me-the-code.html"
+    },
+    "manifest_version": 2
+}
