@@ -9,5 +9,15 @@
     "browser_action": {
         "default_popup": "show-me-the-code.html"
     },
-    "manifest_version": 2
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+            "css": [
+                "tabAs4Spaces.css"
+            ],
+            "matches": [
+                "https://github.com/*"
+            ]
+        }
+    ]
 }
