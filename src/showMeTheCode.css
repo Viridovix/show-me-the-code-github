@@ -1,0 +1,9 @@
+* {
+    tab-size: 4;
+}
+body > div.main-content > div > div.container {
+    width: 96%;
+}
+#js-repo-pjax-container {
+    width: 96%;
+}
