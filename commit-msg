@@ -1,0 +1,29 @@
+#!/bin/sh
+
+#Hooks aren’t transferred with a clone of a project
+#You must copy that script to .git/hooks directory and make it executable
+
+readonly COMMIT_FORMAT_REGEX="#[0-9]+[[:space:]][[:upper:]][[:lower:]]+.*"
+
+function printError() {
+    echo "Commit message does not match expected format"
+    echo "Please read CONTRIBUTING.md carefully"
+    echo "Commit message should start with issue number followed by concise title."
+    echo "First word of title should be present tense verb beginning with capital letter."
+    echo "No dot at the end is needed."
+    echo "    Example: \`#13 Add contributing guidelines\`"
+}
+
+function verifyCommitMessageMatchesExpectedFormat() {
+    if [[ ! $1 =~ $COMMIT_FORMAT_REGEX ]]; then
+        printError
+        exit 1
+    fi
+}
+
+function main() {
+    local commitMessage=`cat $1`
+    verifyCommitMessageMatchesExpectedFormat "$commitMessage"
+}
+
+main $@
