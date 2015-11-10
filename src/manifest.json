@@ -13,10 +13,10 @@
     "content_scripts": [
         {
             "css": [
-                "tabAs4Spaces.css"
+                "showMeTheCode.css"
             ],
             "matches": [
-                "https://github.com/*"
+                "https://github.com/*/blob/*"
             ]
         }
     ]
