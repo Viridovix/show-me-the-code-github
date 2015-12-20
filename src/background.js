@@ -7,8 +7,16 @@ function runShowMeTheCode(tabId, tab) {
         return urlMatches(/.*\/blob\/.*/);
     };
 
-    function pullRequestFileView() {
+    function isPullRequestFileView() {
         return urlMatches(/.*\/pull\/.*\/files/);
+    };
+
+    function isCommitView() {
+        return urlMatches(/.*\/commit\/.*/);
+    };
+
+    function isCompareView() {
+        return urlMatches(/.*\/compare\/.*/);
     };
 
     function urlMatches(expression) {
@@ -20,7 +28,7 @@ function runShowMeTheCode(tabId, tab) {
     };
 
     if (isGitHub()) {
-        if (isBlobView() || pullRequestFileView()) {
+        if (isBlobView() || isPullRequestFileView() || isCommitView() || isCompareView()) {
             insertCSS('showMeTheCode.css');
         } else {
             insertCSS('disableShowMeTheCode.css');
