@@ -1,7 +1,7 @@
 * {
-    tab-size: 4;
+    tab-size: 8;
 }
 
 #js-repo-pjax-container > div.container.new-discussion-timeline.experiment-repo-nav {
-    width: 95%;
+    width: 980px;
 }

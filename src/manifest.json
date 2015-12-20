@@ -4,20 +4,18 @@
     "homepage_url": "https://github.com/Viridovix/show-me-the-code-github",
     "version": "1.0",
     "permissions": [
-        "activeTab"
+        "tabs",
+        "notifications",
+        "https://github.com/*"
     ],
-    "browser_action": {
-        "default_popup": "show-me-the-code.html"
+    "page_action": {
+        "default_title": "Show me the code GitHub"
     },
     "manifest_version": 2,
-    "content_scripts": [
-        {
-            "css": [
-                "showMeTheCode.css"
-            ],
-            "matches": [
-                "https://github.com/*/blob/*"
-            ]
-        }
-    ]
+    "background": {
+        "persistent": false,
+        "scripts": [
+            "background.js"
+        ]
+    }
 }
