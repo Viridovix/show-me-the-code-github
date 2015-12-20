@@ -12,7 +12,7 @@ function runShowMeTheCode(tabId, tab) {
     };
 
     function isCommitView() {
-        return urlMatches(/.*\/commit\/.*/);
+        return urlMatches(/.*\/commit\/\w+$/);
     };
 
     function isCompareView() {
