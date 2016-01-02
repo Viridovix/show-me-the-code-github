@@ -4,5 +4,5 @@
 
 # Show me the code GitHub!
 
-Talk is cheap. Code is everything. So show me the code my dear GitHub! 
+Talk is cheap. Code is everything. So show me the code my dear GitHub!
 Do not limit me to 120 characters per line and do not display tabs as 8 spaces!

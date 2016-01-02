@@ -1,0 +1,9 @@
+language: groovy
+
+jdk: oraclejdk8
+
+sudo: false
+
+cache:
+  directories:
+  - ~/.gradle/wrapper
